@@ -1,2 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Sacramento&display=swap');
 
+.grid-container{
+    width: 1440px; 
+    height: 1024px; 
+    background-color: black; 
+    display: grid; 
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    margin: auto;
+}
+
+.input-todo{
+    display: flex;
+    justify-content: space-between;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 5;
+}
+
+.input-todo > input{
+    background-color: white;
+    width: 80%;
+    height: 80px;
+}
+
+.input-todo > button{
+    border-radius: 50px;
+    width: 155px; 
+    height: 80px;
+    border: 3px solid green;
+    margin-left: 10px;
+
+}
+
+.todo-list{
+    background-color: #EBFF00;
+    font-family: 'Sacramento', cursive;
+    font-size: 33px;
+    color: black;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 7;
+    grid-row-end: 11;
+}
+
+.header{
+    color: white;
+    font-family: 'Merriweather', serif;
+    font-size: 80px;
+    grid-column-start: 3;
+    grid-column-end: 8;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}

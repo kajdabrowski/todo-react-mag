@@ -4,7 +4,7 @@ import BaseButton from './base-button'
 const ToDoList = ({todoitem, deleteToDo}) =>{
 
     return (
-        <ul>
+        <ul className="todo-list">
             {todoitem.map((item, index) => 
                 <li key={index}>
                     {item}

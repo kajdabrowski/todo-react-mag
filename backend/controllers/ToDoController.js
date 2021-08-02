@@ -1,17 +1,5 @@
 const ToDo = require("../models/ToDo");
 
-// const GetAllToDo = async (req, res, next) => {
-//   console.log("get");
-// };
-
-// const PostToDo = async (req, res, next) => {
-//   console.log("post");
-// };
-
-// const DeleteToDoById = async (req, res, next) => {
-//   console.log("delete");
-// };
-
 const GetAllToDo = async (req, res, next) => {
   try {
     console.log("get");

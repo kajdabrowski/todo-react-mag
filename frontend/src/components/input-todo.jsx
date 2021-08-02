@@ -10,7 +10,7 @@ const InputToDo = ({inputHandler}) => {
     }
 
     return (
-        <form onSubmit={submitHandler}>
+        <form onSubmit={submitHandler} className="input-todo">
                     <input type="text" placeholder="Att-göra" ref={todoInput} />
                     <BaseButton>Att-göra</BaseButton>
         </form>

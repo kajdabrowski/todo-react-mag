@@ -1,2 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
+.body{
+    font-size: 21px;
+    font-family: 'Merriweather', serif;
+}
+
+.grid-container{
+    width: 1440px; 
+    height: 1024px; 
+    background-color: black; 
+    display: grid; 
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    margin: auto;
+}
+
+.input-todo{
+    display: flex;
+    justify-content: space-between;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 5;
+}
+
+.input-todo > input{
+    font-family: 'Merriweather', serif;
+    font-size: 1.618rem;
+    background-color: white;
+    width: 80%;
+    font-size: 1.618rem;
+    /* height: 5em; */
+}
+
+.input-todo > button{
+    font-family: 'Merriweather', serif;
+    font-size: 1.618rem;
+    border-radius: 50px;
+    width: 40%; 
+    font-size: 1.618rem;
+    /* height: 80px; */
+    border: 3px solid green;
+    margin-left: 0.8em;
+}
+
+.todo-list{
+    font-family: 'Courgette';
+    background-color: #EBFF00;
+    color: black;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 7;
+    grid-row-end: 11;
+}
+
+.heading{
+    font-family: 'Merriweather', serif;
+    font-size: 4.236rem;
+    color: white;
+    grid-column-start: 3;
+    grid-column-end: 8;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+@media screen and (max-width: 600px) {
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: auto;
+        align-items: center;
+    }
+
+    .input-todo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+       
+    }
+
+    .todo-list{
+        font-family: 'Courgette';
+        background-color: #EBFF00;
+        color: black;
+        height: 10rem;
+        width: 80%;
+    }
+
+    .heading{
+        font-family: 'Merriweather', serif;
+        font-size: 4.236rem;
+        color: white;
+        text-align: center;
+    }
+
+    .input-todo > button{
+        font-family: 'Merriweather', serif;
+        font-size: 1.618rem;
+        border-radius: 50px;
+        width:  12rem;
+        font-size: 1.618rem;
+        border: 3px solid green;
+        margin-left: 0em;
+        margin-top: 1rem;
+    }
+
+    ul{
+        list-style-type: none;
+    }
+
+  }

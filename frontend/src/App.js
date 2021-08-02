@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import InputToDo from './components/input-todo';
 import TodoList from './components/todo-list';
+import Header from './components/header';
+import '../src/styles.css'
 
 
 function App() {
@@ -16,7 +18,8 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="grid-container">
+      <Header />
       <InputToDo inputHandler={inputHandler} />
       <TodoList todoitem={todoitem} deleteToDo={deleteToDo}/>
     </div>

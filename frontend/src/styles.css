@@ -63,6 +63,23 @@
     grid-row-start: 3;
     grid-row-end: 3;
 }
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+}
+li{
+    list-style: none;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+li > button {
+    margin-left: 2rem;
+}
 
 @media screen and (max-width: 600px) {
     .grid-container{
@@ -105,10 +122,6 @@
         border: 3px solid green;
         margin-left: 0em;
         margin-top: 1rem;
-    }
-
-    ul{
-        list-style-type: none;
     }
 
   }

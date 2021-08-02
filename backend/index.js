@@ -2,8 +2,10 @@ const express = require("express")
 require("dotenv").config()
 const app = express()
 const ToDoController = require("./controllers/ToDoController")
+const cors = require("cors")
 
 app.use(express.json())
+app.use(cors())
 
 app.get("/todo", ToDoController.GetAllToDo)
 app.post("/todo", ToDoController.PostToDo)

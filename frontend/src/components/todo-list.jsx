@@ -5,10 +5,10 @@ const ToDoList = ({todoitem, deleteToDo}) =>{
 
     return (
         <ul className="todo-list">
-            {todoitem.map((item, index) => 
-                <li key={index}>
-                    {item}
-                <BaseButton onClick={() => deleteToDo(index)}>X</BaseButton>
+            {todoitem.map((item) => 
+                <li key={item.id}>
+                    {item.description}
+                <BaseButton onClick={() => deleteToDo(item.id)}>X</BaseButton>
                 </li>
                 )}
         </ul>

@@ -1,5 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+.body{
+    font-size: 21px;
+    font-family: 'Merriweather', serif;
+}
 
 .grid-container{
     width: 1440px; 
@@ -20,24 +25,29 @@
 }
 
 .input-todo > input{
+    font-family: 'Merriweather', serif;
+    font-size: 1.618rem;
     background-color: white;
     width: 80%;
-    height: 80px;
+    font-size: 1.618rem;
+    /* height: 5em; */
 }
 
 .input-todo > button{
+    font-family: 'Merriweather', serif;
+    font-size: 1.618rem;
     border-radius: 50px;
-    width: 155px; 
-    height: 80px;
+    width: 40%; 
+    font-size: 1.618rem;
+    /* height: 80px; */
     border: 3px solid green;
-    margin-left: 10px;
+    margin-left: 0.8em;
 
 }
 
 .todo-list{
+    font-family: 'Courgette';
     background-color: #EBFF00;
-    font-family: 'Sacramento', cursive;
-    font-size: 33px;
     color: black;
     grid-column-start: 2;
     grid-column-end: 5;
@@ -45,10 +55,10 @@
     grid-row-end: 11;
 }
 
-.header{
-    color: white;
+.heading{
     font-family: 'Merriweather', serif;
-    font-size: 80px;
+    font-size: 4.236rem;
+    color: white;
     grid-column-start: 3;
     grid-column-end: 8;
     grid-row-start: 3;

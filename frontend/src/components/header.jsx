@@ -3,7 +3,7 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <h1 className="header">Mycket att göra</h1>
+        <h1 className="heading">Mycket att göra</h1>
     )
 }
 
